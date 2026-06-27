@@ -10,6 +10,26 @@
 
         /* Root Layout Adjustments */
         html, body {
+            body {
+    font-family: 'Quicksand', sans-serif;
+    /* Animated multi-point ambient gradient glow */
+    background: linear-gradient(135deg, #ffe5ec 0%, #ffc2d1 50%, #f1c0e8 100%);
+    background-size: 200% 200%;
+    animation: ambientGlow 10s ease infinite;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #4a4a4a;
+    overflow-x: hidden;
+}
+
+/* Keyframe animation for the background color shift */
+@keyframes ambientGlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
             margin: 0;
             padding: 0;
             width: 100%;
